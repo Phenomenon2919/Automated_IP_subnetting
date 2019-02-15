@@ -7,6 +7,7 @@ The input is a JSON string consisting of the following keys:
 • network_addr: The address of the network to be divided into smaller networks.
 • netmask: Netmask of the above network address.
 • subnets: A dictionary of subnets required. The keys are the subnet IDs and values are the number of usable hosts on the subnet. 
+
 Below is a sample JSON string supplied to your tool. This string is displayed across multiple lines for readability: the actual string will be contained in 1 single line terminated by newline character('\n').
 
 *Example*:
@@ -26,6 +27,7 @@ The output of your tool should be a JSON string with the following keys:
 	– start_addr: The first address of subnet.
 	– end_addr: The last address of subnet.
 	– total_host_count: The total number of usable hosts in the network.
+	
 For the input described in previous section, a possible output is the following JSON string. This string is displayed across multiple lines for readability: the actual JSON string should be printed to stdout in 1 single line terminated by newline character('\n').
 
 *Example*:
